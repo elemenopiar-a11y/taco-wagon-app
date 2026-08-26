@@ -18,3 +18,8 @@ module "vpc" {
   enable_dns_hostnames    = true
   map_public_ip_on_launch = true
 }
+
+module "my_s3_bucket" {
+  source  = "terraform-aws-modules/s3-bucket/aws"
+  version = "5.15.4"
+}
