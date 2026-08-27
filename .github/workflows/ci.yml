@@ -108,7 +108,7 @@ jobs:
         run: terraform init -backend-config="./backends/dev.hcl"
 
       - name: Terraform Plan
-        run: terraform plan -out=tf.plan
+        run: terraform plan -var-file="./environments/dev.tfvars" -out=tf.plan
 
       - name: Upload Plan Artifact
         uses: actions/upload-artifact@v4
