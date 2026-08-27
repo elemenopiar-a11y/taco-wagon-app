@@ -1,0 +1,46 @@
+commit 82f0e98863cf9de9565690bf1a6273557bc00948
+Author: elemenopiar-a11y <elemenopiar@gmail.com>
+Date:   Thu Aug 27 09:32:34 2026 +0200
+
+    cd-pipeline: add pipelines, configure bucket
+
+diff --git a/backends/dev.hcl b/backends/dev.hcl
+index 2a3a6fb..84e7be8 100644
+--- a/backends/dev.hcl
++++ b/backends/dev.hcl
+@@ -1,3 +1,3 @@
+ key    = "tw-dev.tfstate"
+-bucket = "tw-terraform-state20260826085653038100000001"
++bucket = "tw-terraform-state20260827072254891400000001"
+ region = "us-west-2"
+\ No newline at end of file
+diff --git a/backends/prodeast.hcl b/backends/prodeast.hcl
+index 5eecf25..fa17dba 100644
+--- a/backends/prodeast.hcl
++++ b/backends/prodeast.hcl
+@@ -1,3 +1,3 @@
+ key    = "tw-prodeast.tfstate"
+-bucket = "tw-terraform-state20260826085653038100000001"
++bucket = "tw-terraform-state20260827072254891400000001"
+ region = "us-west-2"
+\ No newline at end of file
+diff --git a/backends/prodwest.hcl b/backends/prodwest.hcl
+index a6737e6..87c8be3 100644
+--- a/backends/prodwest.hcl
++++ b/backends/prodwest.hcl
+@@ -1,3 +1,3 @@
+ key    = "tw-prodwest.tfstate"
+-bucket = "tw-terraform-state20260826085653038100000001"
++bucket = "tw-terraform-state20260827072254891400000001"
+ region = "us-west-2"
+\ No newline at end of file
+diff --git a/backends/staging.hcl b/backends/staging.hcl
+index 9a09178..88a4cf6 100644
+--- a/backends/staging.hcl
++++ b/backends/staging.hcl
+@@ -1,3 +1,3 @@
+ key    = "tw-staging.tfstate"
+-bucket = "tw-terraform-state20260826085653038100000001"
++bucket = "tw-terraform-state20260827072254891400000001"
+ region = "us-west-2"
+\ No newline at end of file
